@@ -6,7 +6,8 @@ default: &default
 development:
   <<: *default
   database: wechat_starter_development
-
+  adapter: sqlite3
+  host: localhost
 test:
   <<: *default
   database: wechat_starter_test
